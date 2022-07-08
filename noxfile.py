@@ -7,7 +7,7 @@ def install_flit_dev_deps(session):
     if session.python == "3.11":
         env = {
             # https://github.com/aio-libs/aiohttp/issues/6600
-            # "AIOHTTP_NO_EXTENSIONS": "1",
+            "AIOHTTP_NO_EXTENSIONS": "1",
             # https://github.com/aio-libs/frozenlist/issues/285
             "FROZENLIST_NO_EXTENSIONS": "1",
             # https://github.com/aio-libs/yarl/issues/680
